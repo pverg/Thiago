@@ -41,7 +41,7 @@ public class Pessoa {
 		this.peso = peso;
 	}
 
-	@SuppressWarnings("all")
+	@SuppressWarnings("all") //Last case scenario. Not to be taken lightly
 	public void falar() {
 		int idade;
 	}

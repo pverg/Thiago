@@ -20,13 +20,14 @@ import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
 @Table(name = "TB_PASTEL") // não é obrigatório, altera o nome da tabela
-// name: nome no java (generator), sequenceName: nome no banco,
-// allocationSize: passo (de um em um)
+//name deve ser igual ao parâmetro na anotação GeneratedValue abaixo
+//sequenceName deve ser igual ao nome o banco de dados
+//allocationSize indica o passo no qual o código deve ser gerado
 @SequenceGenerator(name = "pastel", sequenceName = "SQ_TB_PASTEL", allocationSize = 1)
 public class Pastel {
 
 	@Id
-	@GeneratedValue(generator = "pastel", strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(generator = "pastel", strategy = GenerationType.SEQUENCE) //Gera um valor automáticamente para o código
 	private int codigo;
 
 	@Column(name = "ds_sabor", nullable = false, length = 50)
@@ -52,7 +53,7 @@ public class Pastel {
 	@Transient //não será uma coluna na tabela no banco de dados
 	private int numeroComanda;
 
-	@Lob //campo para arquivos
+	@Lob // Utilizado para indicar entada de dados de grande dimensão no banco (imagens, etc)
 	private byte[] foto;
 	
 	public Pastel() {
@@ -80,8 +81,6 @@ public class Pastel {
 		this.dataPedido = dataPedido;
 		this.foto = foto;
 	}
-
-
 
 	public int getCodigo() {
 		return codigo;
@@ -156,11 +155,3 @@ public class Pastel {
 	}
 	
 }
-
-
-
-
-
-
-
-

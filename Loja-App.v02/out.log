@@ -1,0 +1,17 @@
+2019-02-20 20:34:17 TRACE TerminalConsulta:26 - Inicializando a aplicação
+2019-02-20 20:34:23 TRACE TerminalConsulta:36 - Recebendo código
+2019-02-20 20:34:23 ERROR TerminalConsulta:45 - Produto não encontrado
+2019-02-20 20:34:32 TRACE TerminalConsulta:36 - Recebendo código
+2019-02-20 20:39:51 ERROR TerminalConsulta:48 - Produto não encontrado
+2019-02-20 20:45:01 WARN  TerminalConsulta:27 - Inicializando a aplicação
+2019-02-20 20:45:13 TRACE TerminalConsulta:39 - Recebendo código
+2019-02-20 20:45:13 DEBUG TerminalConsulta:43 - Tomada de decisão realizada: 401
+2019-02-20 20:45:28 TRACE TerminalConsulta:39 - Recebendo código
+2019-02-20 20:45:28 DEBUG TerminalConsulta:43 - Tomada de decisão realizada: 405
+2019-02-20 20:45:28 ERROR TerminalConsulta:52 - Produto não encontrado
+2019-02-20 20:46:20 WARN  TerminalConsulta:27 - Inicializando a aplicação
+2019-02-20 20:46:25 TRACE TerminalConsulta:39 - Recebendo código
+2019-02-20 20:46:25 DEBUG TerminalConsulta:40 - Tomada de decisão realizada: 405
+2019-02-20 20:46:25 ERROR TerminalConsulta:51 - Produto não encontrado
+2019-02-20 20:46:35 ERROR TerminalConsulta:59 - Opção inválida!
+2019-02-20 20:46:39 WARN  TerminalConsulta:67 - Finalizando a aplicação
