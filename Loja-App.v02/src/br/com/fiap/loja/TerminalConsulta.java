@@ -36,9 +36,6 @@ public class TerminalConsulta {
 			System.out.print("Digite o código: ");
 			codigo = scn.nextInt();
 			
-			log.trace("Recebendo código");
-			log.debug("Tomada de decisão realizada: " + codigo);
-			
 			try {
 				
 				ProdutoTO produto = bo.consultarProduto(codigo);
@@ -47,8 +44,6 @@ public class TerminalConsulta {
 				System.out.println("Qtd: " + produto.getQtd());
 			} catch (NotFoundException e) {
 				System.err.println("Produto não encontrado!");
-				
-				log.error("Produto não encontrado");
 			}
 			
 			System.out.print("Pesquisar outro produto (Y - Sim; N - Não)? ");

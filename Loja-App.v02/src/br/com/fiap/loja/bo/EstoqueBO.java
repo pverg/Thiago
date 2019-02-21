@@ -1,14 +1,21 @@
 package br.com.fiap.loja.bo;
 
+import org.apache.log4j.Logger;
+
+import br.com.fiap.loja.TerminalConsulta;
 import br.com.fiap.loja.exception.NotFoundException;
 import br.com.fiap.loja.to.ProdutoTO;
 
 // Camada de Regras de Negócio
 public class EstoqueBO {
 
+	private static Logger log = Logger.getLogger(EstoqueBO.class);
+	
 	public ProdutoTO consultarProduto(int codigo) throws NotFoundException {
 		
 		ProdutoTO produto;
+		
+		log.debug("Código pesquisado: " + codigo);
 		
 		switch (codigo) {
 		case 401:
@@ -21,6 +28,7 @@ public class EstoqueBO {
 			produto = new ProdutoTO(403, 30, 20, "Camiseta Rosa");
 			break;
 		default:
+			log.error("Produto não encontrado! " + codigo);
 			throw new NotFoundException();
 		}
 		return produto;
