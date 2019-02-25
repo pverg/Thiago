@@ -24,3 +24,7 @@
 2019-02-20 21:10:05 DEBUG TerminalConsulta:40 - Tomada de decisão realizada: 405
 2019-02-20 21:10:05 ERROR TerminalConsulta:51 - Produto não encontrado
 2019-02-20 21:10:10 WARN  TerminalConsulta:67 - Finalizando a aplicação
+2019-02-20 21:22:27 WARN  TerminalConsulta:27 - Inicializando a aplicação
+2019-02-20 21:22:40 DEBUG EstoqueBO:18 - Código pesquisado: 401
+2019-02-20 21:22:54 DEBUG EstoqueBO:18 - Código pesquisado: 405
+2019-02-20 21:22:54 ERROR EstoqueBO:31 - Produto não encontrado405
